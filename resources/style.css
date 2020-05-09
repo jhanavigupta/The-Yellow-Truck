@@ -1,0 +1,134 @@
+/* 
+yellow #F5F866
+*/
+
+/* ---------------------- */
+/* BASIC SETUP */
+/* ---------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------- */
+/* reusable components */
+/* ---------------------------------*/
+
+
+.row{
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+h1,h2{
+    font-weight: 200;
+    margin-left: 55%;
+    text-align: center;
+    
+    
+}
+
+h1{
+     color: #F5F866;
+     font-size: 30px;
+     margin-top: 20%;
+
+}
+
+h2{
+    color: #fff;
+    font-size: 20px;
+   
+}
+
+/* --------------------------------- */
+/* BUTTONS*/
+/* ---------------------------------*/
+
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.catch-us:link,
+.catch-us:visited,
+input[type=submit]{
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+/* --------------------------------- */
+/* Icons*/
+/* ---------------------------------*/
+
+.hero-icon{
+    position: absolute;
+    bottom: 3%;
+    right: 15%;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 4px solid #F5F866;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 30%;
+    
+}
+
+/* --------------------------------- */
+/* HEADER */
+/* --------------------------------- */
+
+header{
+    background-image: url(css/img/background\ mobile\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    position: relative;
+}
+   
+
+.main-nav{
+    list-style: none;
+   
+}
+
+.main-nav li{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 200;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color:#F5F866;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
