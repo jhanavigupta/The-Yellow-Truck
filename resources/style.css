@@ -7,7 +7,7 @@ yellow #F5F866
 /* ---------------------- */
 
 *{
-    margin:0;
+    margin:0 auto;
     padding:0;
     box-sizing: border-box;
 }
@@ -18,7 +18,18 @@ body{
     color: #000;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
+    max-width: 480px;
     text-rendering: optimizeLegibility;
+}
+
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '-';
+    clear: both;
+    display:block;
+    height: 0;
+    visibility: hidden;
 }
 
 /* --------------------------------- */
@@ -31,9 +42,8 @@ body{
     margin: 0 auto;
 }
 
-h1,h2{
+h1,h2,h3{
     font-weight: 200;
-    margin-left: 55%;
     text-align: center;
     
     
@@ -42,19 +52,37 @@ h1,h2{
 h1{
      color: #F5F866;
      font-size: 30px;
-     margin-top: 20%;
+     margin-top: 8%;
+     margin-left: 50%;
 
 }
 
 h2{
     color: #fff;
     font-size: 20px;
+    margin-left: 50%;
    
+}
+h3{
+    color:#000;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
 /* --------------------------------- */
 /* BUTTONS*/
 /* ---------------------------------*/
+
+.nav-btn{
+    display: inline-block;
+    color:#F5F866;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+}
 
 
 .btn:link,
@@ -105,30 +133,135 @@ header{
     position: relative;
 }
    
+/* ----------NAV BTN!---------- */
 
-.main-nav{
+ul{
     list-style: none;
-   
+    overflow: hidden;
+    
 }
 
-.main-nav li{
+li{
+    float: left;
+}
+
+li a:hover, 
+.dropdown:hover .nav-btn{
+    color: #F5F866;
+}
+
+li .dropdown{
     display: inline-block;
-    font-size: 15px;
-    font-weight: 200;
-
 }
 
-.main-nav li a:link,
-.main-nav li a:visited{
-    color:#F5F866;
+.nav-menu{
+    display: none;
+    position: absolute;
+    background-color:#F5F866;
+    width: 100%;
+    min-width: 160px;
+}
+
+.nav-menu a{
+    color: #000;
+    padding: 20px 30px;
     text-decoration: none;
-    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    border-bottom: 1px #000 solid;
+}
 
+.nav-menu a:hover{
+    background-color:#fff;
+    color: #000;
+}
+
+.dropdown:hover .nav-menu{
+    display: block;
+}
+
+/* --------------------------------- */
+/* ABOUT US */
+/* --------------------------------- */
+
+
+/* .circle{
+    position: absolute;
+    background-color: rgb(218, 221, 56);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 70px solid #000;
+} */
+
+
+cite{
+    font-size: 25px;
+    font-weight: 300 lighter;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+cite img{
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: 20 25px 20px 25px;
+    padding: 10px;
+}
+
+.about-us-text{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5%;
+    width: 306px;
+    height: 300px;
+    padding: 13px 16px;
+}
+
+/* --------------------------------- */
+/* GALLERY */
+/* --------------------------------- */
+
+.gallery-text{
+    position: relative;
+    padding: 2%;
+    border: 2px solid #F5F866;
+    border-radius: 2%;
+    margin: 5%;
+    text-align: center;
 }
 
 
 
+.gallery{
+    padding: 0px;
+}
+   
 
+.gallery-img{
+    list-style: none;
+    width: 100%;
+}
 
+.gallery-img li{
+    display:block;
+    float:left;
+    width:30%;
+    height: 10%;
+}
 
-
+.food-photo{
+    width: 100%;
+     margin:5% ;
+    overflow: hidden;
+    background-color: #000;
+}
