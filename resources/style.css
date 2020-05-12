@@ -23,15 +23,6 @@ body{
 }
 
 
-.clearfix{zoom: 1}
-.clearfix:after{
-    content: '-';
-    clear: both;
-    display:block;
-    height: 0;
-    visibility: hidden;
-}
-
 /* --------------------------------- */
 /* reusable components */
 /* ---------------------------------*/
@@ -67,22 +58,16 @@ h3{
     color:#000;
     font-size: 35px;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+h4{
+    font-size: 15px;
 }
 
 /* --------------------------------- */
 /* BUTTONS*/
 /* ---------------------------------*/
-
-.nav-btn{
-    display: inline-block;
-    color:#F5F866;
-    font-size: 30px;
-    font-weight: 100;
-    padding-top: 10px;
-    padding-left: 20px;
-    text-decoration: none;
-}
 
 
 .btn:link,
@@ -98,6 +83,23 @@ input[type=submit]{
 .catch-us:visited,
 input[type=submit]{
     background-color: rgba(255, 255, 255, 0.23);
+}
+
+.btn-sub:link,
+.btn-sub:visited,
+input[type=submit]{
+    display: inline-block;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5%;
+    text-decoration: none;
+    text-align: center;
+    width: 230px;
+    height: 50px;
+    font-size: 30px;
+    display: inline-block;
+    padding: 2px 0;
+    margin-top: 20px;
 }
 
 /* --------------------------------- */
@@ -125,8 +127,8 @@ header{
     background-image: url(css/img/background\ mobile\ \(1\).jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -134,23 +136,28 @@ header{
 }
    
 /* ----------NAV BTN!---------- */
+.nav-btn{
+    display: inline-block;
+    color:#F5F866;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    
+}
 
-ul{
+.dropdown-container{
     list-style: none;
     overflow: hidden;
     
 }
-
-li{
-    float: left;
-}
-
-li a:hover, 
+.dropdown a:hover, 
 .dropdown:hover .nav-btn{
     color: #F5F866;
 }
 
-li .dropdown{
+ .dropdown{
     display: inline-block;
 }
 
@@ -158,8 +165,11 @@ li .dropdown{
     display: none;
     position: absolute;
     background-color:#F5F866;
-    width: 100%;
+    width: 40%;
+    height: 94%;
     min-width: 160px;
+    z-index: 2px;
+
 }
 
 .nav-menu a{
@@ -168,7 +178,6 @@ li .dropdown{
     text-decoration: none;
     display: block;
     text-align: center;
-    border-bottom: 1px #000 solid;
 }
 
 .nav-menu a:hover{
@@ -184,24 +193,12 @@ li .dropdown{
 /* ABOUT US */
 /* --------------------------------- */
 
-
-/* .circle{
-    position: absolute;
-    background-color: rgb(218, 221, 56);
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: 70px solid #000;
-} */
-
-
 cite{
     font-size: 25px;
     font-weight: 300 lighter;
     display: block;
     text-align: center;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 
@@ -209,8 +206,8 @@ cite img{
     width: 50%;
     border-radius: 50%;
     display: block;
-    margin: 20 25px 20px 25px;
-    padding: 10px;
+    /* margin:20px 25px 20px 25px; */
+    padding: 20px;
 }
 
 .about-us-text{
@@ -225,43 +222,162 @@ cite img{
     width: 306px;
     height: 300px;
     padding: 13px 16px;
+    margin: 40px auto 40px auto;
 }
+
 
 /* --------------------------------- */
-/* GALLERY */
+/* gallery */
 /* --------------------------------- */
 
-.gallery-text{
-    position: relative;
-    padding: 2%;
-    border: 2px solid #F5F866;
-    border-radius: 2%;
-    margin: 5%;
-    text-align: center;
+.flex-container{
+    width: 97%;
+    height: 100vh;
+    max-width: 480px;   
 }
 
-
-
-.gallery{
-    padding: 0px;
-}
-   
-
-.gallery-img{
-    list-style: none;
+.row1{
+    display: flex;
     width: 100%;
-}
-
-.gallery-img li{
-    display:block;
-    float:left;
-    width:30%;
-    height: 10%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2% auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .food-photo{
-    width: 100%;
-     margin:5% ;
-    overflow: hidden;
-    background-color: #000;
+    flex: 0 0 46%;
+    object-fit: cover;
+   
+}
+
+
+/* --------------------------------- */
+/* tricks */
+/* --------------------------------- */
+
+.section-tricks{
+    position: relative;
+    background-color: #F5F866;
+}
+    
+
+.tricks-heading h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    font-weight: 200;
+
+}
+.sandwich,
+.salad,
+.momo,
+.tea,
+.pancake,
+.mocktail{
+    display: flex;
+    max-width: 480px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 4px;
+   
+}
+
+.sandwich__hero,
+.salad__hero,
+.momo__hero,
+.tea__hero,
+.pancake__hero,
+.mocktail__hero{
+    flex: 0 0 50%;
+}
+
+
+.sandwich__content,
+.salad__content,
+.momo__content,
+.tea__content,
+.pancake-content,
+.mocktail__content{
+    flex:0 0 45%;
+    
+}
+
+.sandwich__img,
+.salad__img,
+.momo__img,
+.tea__img,
+.pancake__img,
+.mocktail__img{
+    width: 95%;
+    display: block;
+
+}
+.mocktail__img{
+    padding-bottom: 30px;
+}
+/* ------------------------------- */
+/* section contact */
+/* -------------------------------- */
+
+.section-contact{
+    position: relative;
+    text-align: center;
+}
+.section-contact h3{
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+.follow{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    font-size: 40px;
+    
+}
+
+.icon-facebook{
+    color:#3b5998;
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-instagram{
+    color:#C13584;
+}
+
+/* ------------------------------- */
+/* footer */
+/* -------------------------------- */
+
+footer{
+    background-color: #333;
+    padding:20px 5px;
+    font-size: 55%;
+    color: #fff;
+    font-weight: 100;
+}
+
+
+.flex-box-container{
+    display: flex;
+
+}
+
+.contact{
+    flex: 0 0 120px;
+
+}
+
+.copyright{
+    flex: 0 0 230px;
 }

@@ -5,8 +5,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="resources/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
         rel="stylesheet">
@@ -16,8 +14,8 @@
 
 <body>
     <header>
-        <ul>
-            <li class="dropdown"><a href="#" class="nav-btn"><i class="ion-navicon-round"></i></a>
+        <div class="dropdown-container">
+            <div class="dropdown"><a href="#" class="nav-btn"><i class="ion-navicon-round"></i></a>
                 <div class="nav-menu">
                     <a href="#"><b>HOME</b></a>
                     <a href="#"><b>ABOUT US</b></a>
@@ -25,8 +23,8 @@
                     <a href="#"><b>SPECIALITIES</b></a>
                     <a href="#"><b>CONTACT</b></a>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <div class="hero-text-box">
             <h1>THE<br>YELLOW<br>TRUCK</h1>
@@ -38,13 +36,12 @@
     </header>
 
     <section class="about us">
-        <!-- <div class="circle"></div> -->
-        <div class="row">
+        <div class="row1">
             <h3>ABOUT US</h3>
             <cite><img src="resources/img/bg.jpeg" alt="devlopers-img">JHANAVI GUPTA</cite>
         </div>
 
-        <div class="row">
+        <div class="row1">
             <p class="about-us-text">
                 THE YELLOW TRUCK is a dream project created by us to travel India. Every year for one month we go on the
                 road and serve
@@ -58,47 +55,153 @@
         <div class="gallery-text">
             <h3>GALLERY</h3>
         </div>
-        <ul class="gallery-img clearfix">
-            <li>
+        <!-- <div class="flex-container">
+            <div class="row1">
                 <figure class="food-photo">
                     <img src="resources/img/donut.jpg" alt="donut">
                 </figure>
-            </li>
-            <li>
+
                 <figure class="food-photo">
                     <img src="resources/img/burger.jpg" alt="burger">
                 </figure>
-            </li>
-        </ul>
-        <ul>
-            <li>
+
                 <figure class="food-photo">
-                    <img src="resources/img/taco salad.jpg" alt="taco salad ">
+                    <img src="resources/img/taco salad.jpg" alt="taco-salad">
                 </figure>
-            </li>
-        </ul>
-        <ul>
-            <li>
+
                 <figure class="food-photo">
                     <img src="resources/img/pizza.jpg" alt="pizza">
                 </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
+
+                <figure class="food-photo">
                     <img src="resources/img/coffee.jpg" alt="coffee">
                 </figure>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <figure class="meal-photo">
+
+                <figure class="food-photo">
                     <img src="resources/img/waffle.jpg" alt="waffle">
                 </figure>
-            </li>
-        </ul>
-    </section>
+            </div>
+        </div>
+    </section> -->
 
 
+        <section class="section-tricks">
+            <div class="tricks-heading">
+                <h3>Our special<br>tricks</h3>
+            </div>
+            <figure class="sandwich">
+                <div class="sandwich__hero">
+                    <img src="resources/img/sandwich.jpg" alt="sandwich" class="sandwich__img">
+                </div>
+                <div class="sandwich-content">
+                    <h4><b>Grilled Cheese<br>Sandwich</b></h4>
+                    Adding tandoori chicken<br>slices with tandoori sauce<br>and cheese add a<br>complete different
+                    touch
+                    to<br>an odinary sandwich!
+                </div>
+            </figure>
+
+            <figure class="salad">
+                <div class="salad__hero">
+                    <img src="resources/img/salad.jpg" alt="salad" class="salad__img">
+                </div>
+                <div class="salad-content">
+                    <h4><b>Salad</b></h4>
+                    Add some oregano and<br>curd to change the<br>ordinary taste to<br>something intresting.
+                </div>
+            </figure>
+
+            <figure class="momo">
+                <div class="momo__hero">
+                    <img src="resources/img/momo.jpg" alt="momo" class="momo__img">
+                </div>
+                <div class="momo-content">
+                    <h4><b>Momo</b></h4>
+                    Add some oregano and<br>curd to change the<br>ordinary taste to<br>something intresting.
+                </div>
+            </figure>
+
+            <figure class="tea">
+                <div class="tea__hero">
+                    <img src="resources/img/tea.jpg" alt="tea" class="tea__img">
+                </div>
+                <div class="tea-content">
+                    <h4><b>Tea</b></h4>
+                    Add desi Indian spices<br>and Gginger to make it<br>refreshing and<br>energising.
+                </div>
+            </figure>
+
+            <figure class="pancake">
+                <div class="pancake__hero">
+                    <img src="resources/img/pancake.jpg" alt="pancake" class="pancake__img">
+                </div>
+                <div class="pancake-content">
+                    <h4><b>Pancake</b></h4>
+                    Add the combination<br>f maple syrup<br>stawberries,<br>melted chocolate and cherries to<br>make
+                    your
+                    ordinary<br>pancakes extra
+                    delecious!
+                </div>
+            </figure>
+
+            <figure class="mocktail">
+                <div class="mocktail__hero">
+                    <img src="resources/img/mocktails.jpg" alt="mocktail" class="mocktail__img">
+                </div>
+                <div class="mocktail-content">
+                    <h4><b>Mocktail</b></h4>
+                    Add some lemon, black<br>salt, black pepper and<br>int to convert your<br>odinary cold drink
+                    into<br>and
+                    exciting mocktail.
+                </div>
+            </figure>
+        </section>
+
+        <section class="section-contact">
+            <div class="row">
+                <h3>Get notified when we get<br>back on road!</h3>
+            </div>
+            <div class="row">
+                <label for="email">email</label>
+
+            </div>
+            <div class="btn-sub">
+                <a class="btn btn-sub" href="#">subscribe</a>
+            </div>
+
+            <div class="row">
+                <p class="follow">follow us on</p>
+            </div>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="ion-social-facebook" class="icon-facebook">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="ion-social-instagram" class="icon-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="ion-social-twitter" class="icon-twitter"></i>
+            </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="flex-box-container">
+                <div class="contact">
+                    THE YELLOW TRUCK COMPANY,
+                    Barakhamba road, Cannaught place, New Delhi
+                    +917453789890
+                    TYTco@gmail.com
+                </div>
+                <div class="copyright">
+                    @Copyright 2020-2021 The Yellow Truck Company
+                </div>
+            </div>
+        </footer>
+
+        </footer>
 </body>
 
 </html>
