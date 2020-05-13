@@ -18,7 +18,7 @@ body{
     color: #000;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
-    max-width: 480px;
+    max-width: 100%;
     text-rendering: optimizeLegibility;
 }
 
@@ -29,7 +29,6 @@ body{
 
 
 .row{
-    max-width: 480px;
     margin: 0 auto;
 }
 
@@ -189,7 +188,6 @@ cite img{
     width: 50%;
     border-radius: 50%;
     display: block;
-    /* margin:20px 25px 20px 25px; */
     padding: 20px;
 }
 
@@ -213,29 +211,30 @@ cite img{
 /* gallery */
 /* --------------------------------- */
 
-/* .flex-container{ 
-    max-width: 480px;
-   width: 97%;
-    height: 100vh; 
-} */
 .row1{
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
-/* .row1 div{
-    padding: 5px;
-    margin: 2% auto;
-} */
 
 .food-photo{
-    padding: 0 10px 10px;
-    /* flex: 0 0 1%; */
+    flex: 0 0 48%;
+    padding: 1%;
+    margin:0;
 }
 
+.food-photo >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+     transform: box-shadow 0.2s;
+}
 
+.food-photo >img:hover{
+    box-shadow:-2px -2px 2px rgba(0, 0, 0, 0.79), 2px 2px 2px rgba(0, 0, 0, 0.79);
+}
 
 /* --------------------------------- */
 /* tricks */
@@ -257,18 +256,26 @@ cite img{
 }
  .foodie{ 
     display: flex;
-    max-width: 480px;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3% auto;
 }
 
 .foodie__hero{
-    flex: 0 0 50%;
+    flex: 0 0 48%;
+}
+
+.foodie__hero > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0;
 }
 
 .foodie__content{
-    flex:0 0 45%;
+    flex:0 0 48%;
+    text-align: center;
+    align-self: center;
     
 }
 
