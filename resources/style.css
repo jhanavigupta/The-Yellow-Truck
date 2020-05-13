@@ -85,23 +85,6 @@ input[type=submit]{
     background-color: rgba(255, 255, 255, 0.23);
 }
 
-.btn-sub:link,
-.btn-sub:visited,
-input[type=submit]{
-    display: inline-block;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 5%;
-    text-decoration: none;
-    text-align: center;
-    width: 230px;
-    height: 50px;
-    font-size: 30px;
-    display: inline-block;
-    padding: 2px 0;
-    margin-top: 20px;
-}
-
 /* --------------------------------- */
 /* Icons*/
 /* ---------------------------------*/
@@ -230,27 +213,28 @@ cite img{
 /* gallery */
 /* --------------------------------- */
 
-.flex-container{
-    width: 97%;
-    height: 100vh;
-    max-width: 480px;   
-}
-
+/* .flex-container{ 
+    max-width: 480px;
+   width: 97%;
+    height: 100vh; 
+} */
 .row1{
-    display: flex;
-    width: 100%;
+     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 2% auto;
     align-items: center;
     justify-content: center;
 }
+/* .row1 div{
+    padding: 5px;
+    margin: 2% auto;
+} */
 
 .food-photo{
-    flex: 0 0 46%;
-    object-fit: cover;
-   
+    padding: 0 10px 10px;
+    /* flex: 0 0 1%; */
 }
+
 
 
 /* --------------------------------- */
@@ -271,36 +255,19 @@ cite img{
     font-weight: 200;
 
 }
-.sandwich,
-.salad,
-.momo,
-.tea,
-.pancake,
-.mocktail{
+ .foodie{ 
     display: flex;
     max-width: 480px;
     align-items: center;
     justify-content: center;
     padding: 5px 4px;
-   
 }
 
-.sandwich__hero,
-.salad__hero,
-.momo__hero,
-.tea__hero,
-.pancake__hero,
-.mocktail__hero{
+.foodie__hero{
     flex: 0 0 50%;
 }
 
-
-.sandwich__content,
-.salad__content,
-.momo__content,
-.tea__content,
-.pancake-content,
-.mocktail__content{
+.foodie__content{
     flex:0 0 45%;
     
 }
@@ -329,7 +296,21 @@ cite img{
 .section-contact h3{
     font-size: 20px;
     font-weight: 300;
+    padding: 10px;
+    margin: 30px;
     
+}
+
+input[type=text]{
+    font-size: 25px;
+    font-weight: 100;
+    padding: 10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
 }
 
 .follow{
@@ -339,19 +320,66 @@ cite img{
 }
 
 .social-icons {
-    font-size: 40px;
+    font-size: 50px;
     
 }
 
-.icon-facebook{
+.subscribe{
+    border: 2px solid #000;
+    border-radius: 5%;
+    background-color: #fff;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    padding: 2px;
+    margin-top: 40px;
+}
+
+.btn-sub:link,
+.btn-sub:visited{
+    display: inline-block;
+    color: #000;
+}
+
+/* .btn-social{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 30px 0;
+    padding: 5px;
+} */
+
+.btn-social:link,
+.btn-social:visited{
+    display: inline-block;
+    text-decoration: none;
+}
+    
+.facebook{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 30px 0;
+    padding: 5px;
     color:#3b5998;
 }
 
-.icon-twitter{
+.twitter{
+     border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 30px 0;
+    padding: 5px;
     color:#00aced;
 }
 
-.icon-instagram{
+.instagram{
+     border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 30px 0;
+    padding: 5px;
     color:#C13584;
 }
 
